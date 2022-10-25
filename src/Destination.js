@@ -30,7 +30,7 @@ export default class Destination extends Component {
             <div className='Destination'>
                 <h1 className='Destination-heading'>01 PICK YOUR DESTINATION</h1>
                 <figure className='Destination-image'>
-                    <img src={require(`./starter-code${destImage}`)} alt={`Image of the ${destName}`} />
+                    <img src={require(`./starter-code${destImage}`)} alt={destName} />
                 </figure>
                 <section>
                     <button onClick={this.handleClick} className='Moon'>Moon</button>
@@ -49,7 +49,7 @@ export default class Destination extends Component {
                         <h3>AVG. DISTANCE</h3>
                         <h2>{ destDistance }</h2>
                     </div>
-                    </div>              
+                </div>              
             </div>
         )
     }
