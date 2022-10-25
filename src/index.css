@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'bellefairregular';
+    src: url('./Bellefair-Regular/bellefair-regular-webfont.woff2') format('woff2'),
+         url('./Bellefair-Regular/bellefair-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+
+:root {
+    font-family: 'bellefairregular';
+    --white: #ffffff;
+    --purplish: #d0d6f9;
+    --bluish: #0b0d17;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 28px;
+    letter-spacing: 4.75;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h6 {
+    font-size: 28px;
+    text-transform: uppercase;
+}

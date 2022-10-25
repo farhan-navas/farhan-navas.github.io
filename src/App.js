@@ -1,15 +1,20 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import Crew from './Crew';
 import Destination from './Destination';
 import Home from './Home'
-import NavBar from './NavBar';
 import NotFound from './NotFound';
 import Technology from './Technology';
+import './App.css'
 
 function App() {
   return (
-    <>
-      <NavBar/>
+    <main className='App'>
+      <nav>
+        <Link to={'/'}>00 HOME</Link>
+        <Link to={'/destination'}>01 DESTINATION</Link>
+        <Link to={'/crew'}>02 CREW</Link>
+        <Link to={'/technology'}>03 TECHNOLOGY</Link>
+      </nav>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/destination' element={<Destination />} />
@@ -17,7 +22,7 @@ function App() {
         <Route path='/technology' element={<Technology />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-    </>
+    </main>
   );
 }
 

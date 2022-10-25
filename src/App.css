@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: var(--bluish);
+    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 1px);
+}
