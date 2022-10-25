@@ -11,3 +11,28 @@
     background-size: cover;
     height: calc(100vh - 1px);
 }
+
+.NavBar {
+    min-height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.NavBar > h6:link {
+    text-decoration: none;
+}
+
+.NavBar > h6:visited {
+    text-decoration: none;
+}
+
+.NavBar > h6:hover {
+    text-decoration: none;
+}
+
+.NavBar > h6:active {
+    color: var(--white);
+    text-decoration: initial;
+    padding: 0.5rem;
+}

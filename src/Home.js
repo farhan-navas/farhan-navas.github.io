@@ -4,9 +4,9 @@ import './Home.css'
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='Home'>
                 <main className='MainPage'>
-                    <h2 className='MainPage-subheading'>So, You want to travel to space</h2>
+                    <h4 className='MainPage-subheading'>So, You want to travel to space</h4>
                     <h1 className='MainPage-heading'>SPACE</h1>
                 </main>
 

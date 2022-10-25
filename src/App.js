@@ -9,11 +9,11 @@ import './App.css'
 function App() {
   return (
     <main className='App'>
-      <nav>
-        <Link to={'/'}>00 HOME</Link>
-        <Link to={'/destination'}>01 DESTINATION</Link>
-        <Link to={'/crew'}>02 CREW</Link>
-        <Link to={'/technology'}>03 TECHNOLOGY</Link>
+      <nav className='NavBar'>
+        <h6><Link to={'/'}>00 HOME</Link></h6>
+        <h6><Link to={'/destination'}>01 DESTINATION</Link></h6>
+        <h6><Link to={'/crew'}>02 CREW</Link></h6>
+        <h6><Link to={'/technology'}>03 TECHNOLOGY</Link></h6>
       </nav>
       <Routes>
         <Route path='/' element={<Home />} />
