@@ -1,38 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.App {
-    background-color: var(--bluish);
-    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 1px);
-}
-
 .NavBar {
-    min-height: 10%;
+    height: 10%;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: #0b0d17;
 }
 
-.NavBar > h6:link {
-    text-decoration: none;
-}
-
-.NavBar > h6:visited {
-    text-decoration: none;
-}
-
-.NavBar > h6:hover {
-    text-decoration: none;
-}
-
-.NavBar > h6:active {
+.NavBar > h6 > a {
     color: var(--white);
-    text-decoration: initial;
+    text-decoration: none;
     padding: 0.5rem;
+}
+
+.NavBar > h6 > .active {
+    color: aqua;
 }
