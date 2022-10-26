@@ -1,4 +1,54 @@
+.Home {
+    display: flex;
+    height: calc(70vh - 1px);
+    align-items: center;
+}
+
+.MainPage {
+    padding-left: 15%;
+    height: 382px;
+    width: 550px;
+}
+
+.MainPage-subheading {
+    font-weight: 200;
+    color: var(--purplish);
+}
+
 .MainPage-heading {
     font-size: 150px;
-    font-weight: 500;
+    margin-block: 0.1em;
+}
+
+.MainPage-content {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    color: var(--purplish);
+}
+
+.MainPage-button {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 274px;
+    width: 274px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.MainPage-button:hover {
+    cursor: pointer;
+    border: 87px solid var(--navbar--color);
+    
+}
+
+.MainPage-button > h3 {
+    line-height: 274px;
+    margin-block: 0;
+    text-align: center;    
+    color: var(--bluish);
 }

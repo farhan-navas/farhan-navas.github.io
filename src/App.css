@@ -22,7 +22,8 @@
 
 .NavBar > .links {
     display: flex;
-    background-color: var(--background--color);
+    background-color: var(--navbar--color);
+    padding: 0 5rem;
 }
 
 .NavBar > .links > h6 {
