@@ -1,0 +1,58 @@
+body {
+    background-color: var(--bluish);
+    background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(80vh - 1px);
+}
+
+.Destination {
+    display: flex;
+}
+
+.Destination-sidebar {
+    margin-left: auto;
+    margin-top: 180px;
+    width: 678px;
+    height: 678px;
+}
+
+.Destination-sidebar > .Destination-heading > span {
+    color: gray;
+    font-weight: 500;
+}
+
+.Destination-sidebar > .Destination-image {
+    height: 445px;
+    width: 445px;
+    display: block;
+}
+
+.Destination-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 445px;
+    height: 472px;
+}
+
+.Destination-content > .Destination-buttons {
+    display: flex;
+    cursor: pointer;
+    width: 285px;
+    text-transform: uppercase;
+}
+
+.Destination-content > .Destination-buttons > h6 {
+    padding: 1rem 0.3rem;
+    margin: 1rem 1.5rem;
+}
+
+.Destination-content > .Destination-buttons > h6:hover {
+    border-bottom: 2px solid var(--white--transparent) ;
+}
+
+.Destination-content > .Destination-desc {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+
+}

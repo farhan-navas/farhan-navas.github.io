@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Data from './starter-code/data.json'
+import './Destination.css'
 
 export default class Destination extends Component {
     constructor(props) {
@@ -26,28 +27,34 @@ export default class Destination extends Component {
         const destDesc = destData.description
         const destImage = destData.images.substring(1)
         const destDistance = destData.distance
+        const destTime = destData.travel
         return (
             <div className='Destination'>
-                <h1 className='Destination-heading'>01 PICK YOUR DESTINATION</h1>
-                <figure className='Destination-image'>
-                    <img src={require(`./starter-code${destImage}`)} alt={destName} />
-                </figure>
-                <section>
-                    <button onClick={this.handleClick} className='Moon'>Moon</button>
-                    <button onClick={this.handleClick} className='Mars'>Mars</button>
-                    <button onClick={this.handleClick} className='Europa'>Europa</button>
-                    <button onClick={this.handleClick} className='Titan'>Titan</button>
-                </section>
-                <h1 className='Destination-name'>{ destName }</h1>
-                <p className='Destination-desc'>{ destDesc }</p>
-                <div>
-                    <div className='Destination-distance'>
-                        <h3>AVG. DISTANCE</h3>
-                        <h2>{ destDistance }</h2>
-                    </div>
-                    <div className='Destination-distance'>
-                        <h3>AVG. DISTANCE</h3>
-                        <h2>{ destDistance }</h2>
+                <div className='Destination-sidebar'>
+                    <h4 className='Destination-heading'><span>01</span> PICK YOUR DESTINATION</h4>
+                    <figure className='Destination-image'>
+                        <img src={require(`./starter-code${destImage}`)} alt={destName} />
+                    </figure>
+                </div>
+
+                <div className='Destination-content'>
+                    <section className='Destination-buttons'>
+                        <h6 onClick={this.handleClick} className='Moon'>Moon</h6>
+                        <h6 onClick={this.handleClick} className='Mars'>Mars</h6>
+                        <h6 onClick={this.handleClick} className='Europa'>Europa</h6>
+                        <h6 onClick={this.handleClick} className='Titan'>Titan</h6>
+                    </section>
+                    <h1 className='Destination-name'>{ destName }</h1>
+                    <p className='Destination-desc'>{ destDesc }</p>
+                    <div className='Destination-bottom'>
+                        <div className='Destination-distance'>
+                            <h3>AVG. DISTANCE</h3>
+                            <h2>{ destDistance }</h2>
+                        </div>
+                        <div className='Destination-time'>
+                            <h3>EST. TRAVEL TIME</h3>
+                            <h2>{ destTime }</h2>
+                        </div>
                     </div>
                 </div>              
             </div>

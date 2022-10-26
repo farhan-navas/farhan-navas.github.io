@@ -18,6 +18,14 @@
     color: var(--white);
 }
 
+body {
+    background-color: var(--bluish);
+    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(80vh - 1px);
+}
+
 h1 {
     font-size: 100px;
     text-transform: uppercase;
@@ -41,6 +49,7 @@ h4 {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
 }
 
 h5 {
@@ -56,10 +65,4 @@ h6 {
     letter-spacing: 0.2rem;
 }
 
-body {
-    background-color: var(--bluish);
-    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(80vh - 1px);
-}
+
