@@ -15,6 +15,7 @@
     --bluish: #0b0d17;
     --white--transparent: #b3b3b3;
     --grayish: #7d7d7d;
+    --darkgrayish: #404040;
     --navbar--color: rgba(11, 13, 23, 0.4);
     color: var(--white);
 }

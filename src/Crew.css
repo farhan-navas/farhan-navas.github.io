@@ -19,7 +19,7 @@ body {
 }
 
 .Crew-main > .Crew-content > h4 > span {
-    color: var(--white--transparent);
+    color: var(--grayish);
     font-weight: 500;
 }
 
@@ -61,11 +61,11 @@ body {
     width: 14px;
     border-radius: 50%;
     margin: 0rem 1rem;
-    background-color: var(--grayish);
+    background-color: var(--darkgrayish);
 }
 
 .Crew-main > section > div:hover {
-    background-color: var(--white--transparent);
+    background-color: var(--grayish);
 }
 
 .Crew-main > section > .active {

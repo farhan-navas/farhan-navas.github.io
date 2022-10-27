@@ -1,0 +1,75 @@
+.Technology {
+    display: flex;
+    margin-left: 11%;
+}
+
+.Technology-main >.Technology-intro {
+    margin-top: 20%;
+}
+
+.Technology-main > .Technology-intro > .Technology-heading > span {
+    color: var(--grayish);
+    font-weight: 500;
+}
+
+.Technology-main > .Technology-content {
+    display: flex;
+} 
+
+.Technology-main > .Technology-content > .Technology-buttons {
+    margin-top: 25%;
+}
+
+.Technology-main > .Technology-content > .Technology-buttons > h3 {
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid var(--darkgrayish);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.Technology-main > .Technology-content > .Technology-buttons > h3:hover {
+    border: 2px solid var(--white--transparent);
+}
+
+.Technology-main > .Technology-content > .Technology-buttons > .active {
+    background-color: var(--white);
+    color: var(--bluish);
+}
+
+.Technology-main > .Technology-content > .Technology-content-desc {
+    margin-left: 25%;
+    width: 500px;
+    margin-top: 25%;
+}
+
+.Technology-main > .Technology-content > .Technology-content-desc > .Technology-subheading {
+    color: var(--purplish);
+    margin-block-end: 0;
+}
+
+.Technology-main > .Technology-content > .Technology-content-desc > .Technology-name {
+    min-width: 470px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.6em;
+}
+
+.Technology-main > .Technology-content > .Technology-content-desc > .Technology-description {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--purplish);
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    margin-block-end: 2.5rem;
+    width: 444px;
+}
+
+.Technology-image {
+    margin-block-start: 10%;
+    margin-inline-start: 40%;
+    transform: scale(1.1);
+}
