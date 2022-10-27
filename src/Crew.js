@@ -30,15 +30,17 @@ export default class Crew extends Component {
         return (
             <div className='Crew'>
                 <div className='Crew-main'>
-                    <h4 className='Crew-heading'><span>02</span> MEET YOUR CREW</h4>
-                    <h3 className='Crew-role'>{ crewRole }</h3>
-                    <h2 className='Crew-name'>{ crewName }</h2>
-                    <p className='Crew-bio>'>{ crewBio }</p>
+                    <div className='Crew-content'>
+                        <h4 className='Crew-heading'><span>02</span> MEET YOUR CREW</h4>
+                        <h3 className='Crew-role'>{ crewRole }</h3>
+                        <h2 className='Crew-name'>{ crewName }</h2>
+                        <p className='Crew-bio>'>{ crewBio }</p>
+                    </div>
                     <section>
-                        <div onClick={this.handleClick} className='Commander'></div>
-                        <div onClick={this.handleClick} className='Mission Specialist'></div>
-                        <div onClick={this.handleClick} className='Flight Engineer'></div>
-                        <div onClick={this.handleClick} className='Pilot'></div>
+                        <div onClick={this.handleClick} className={this.state.crew === 0 ? 'Commander active' : 'Commander'}></div>
+                        <div onClick={this.handleClick} className={this.state.crew === 1 ? 'Mission Specialist active' : 'Mission Specialist'}></div>
+                        <div onClick={this.handleClick} className={this.state.crew === 2 ? 'Flight Engineer active' : 'Flight Engineer'}></div>
+                        <div onClick={this.handleClick} className={this.state.crew === 3 ? 'Pilot active' : 'Pilot'}></div>
                     </section>
                 </div>
                     

@@ -14,16 +14,9 @@
     --purplish: #d0d6f9;
     --bluish: #0b0d17;
     --white--transparent: #b3b3b3;
+    --grayish: #7d7d7d;
     --navbar--color: rgba(11, 13, 23, 0.4);
     color: var(--white);
-}
-
-body {
-    background-color: var(--bluish);
-    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(80vh - 1px);
 }
 
 h1 {

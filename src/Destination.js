@@ -39,10 +39,10 @@ export default class Destination extends Component {
 
                 <div className='Destination-content'>
                     <section className='Destination-buttons'>
-                        <h6 onClick={this.handleClick} className={ this.state.destination === 0 ? 'active' : undefined }>Moon</h6>
-                        <h6 onClick={this.handleClick} className={ this.state.destination === 1 ? 'active' : undefined }>Mars</h6>
-                        <h6 onClick={this.handleClick} className={ this.state.destination === 2 ? 'active' : undefined }>Europa</h6>
-                        <h6 onClick={this.handleClick} className={ this.state.destination === 3 ? 'active' : undefined }>Titan</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 0 ? 'Moon active' : 'Moon' }>Moon</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 1 ? 'Mars active' : 'Mars' }>Mars</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 2 ? 'Europa active' : 'Europa' }>Europa</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 3 ? 'Titan active' : 'Titan' }>Titan</h6>
                     </section>
                     <h1 className='Destination-name'>{ destName }</h1>
                     <p className='Destination-desc'>{ destDesc }</p>
