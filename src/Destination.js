@@ -21,11 +21,6 @@ export default class Destination extends Component {
         }
     }
 
-    // write a logic that makes it such that when the destination is pointing a certain state, that one is active so the className will
-    // change to active and then will have diff styles
-    
-    // also fix the headers such that content doesnt shift down
-
     render() {
         const destData = Data.destinations[this.state.destination]
         const destName = destData.name
@@ -44,10 +39,10 @@ export default class Destination extends Component {
 
                 <div className='Destination-content'>
                     <section className='Destination-buttons'>
-                        <h6 onClick={this.handleClick} className='Moon'>Moon</h6>
-                        <h6 onClick={this.handleClick} className='Mars'>Mars</h6>
-                        <h6 onClick={this.handleClick} className='Europa'>Europa</h6>
-                        <h6 onClick={this.handleClick} className='Titan'>Titan</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 0 ? 'Moon active' : 'Moon' }>Moon</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 1 ? 'Mars active' : 'Mars' }>Mars</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 2 ? 'Europa active' : 'Europa' }>Europa</h6>
+                        <h6 onClick={this.handleClick} className={ this.state.destination === 3 ? 'Titan active' : 'Titan' }>Titan</h6>
                     </section>
                     <h1 className='Destination-name'>{ destName }</h1>
                     <p className='Destination-desc'>{ destDesc }</p>

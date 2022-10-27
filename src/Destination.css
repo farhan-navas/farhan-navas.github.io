@@ -49,13 +49,14 @@ body {
 .Destination-content > .Destination-buttons > h6 {
     padding: 1rem 0.3rem;
     margin: 1rem 1.5rem;
+    border-bottom: 2px solid transparent;
 }
 
 .Destination-content > .Destination-buttons > h6:hover {
-    border-bottom: 1px solid var(--white--transparent) ;
+    border-bottom: 2px solid var(--white--transparent) ;
 }
 
-.Destination-content > .Destination-buttons > h6:active {
+.Destination-content > .Destination-buttons > .active {
     border-bottom: 2px solid var(--white);
 }
 
