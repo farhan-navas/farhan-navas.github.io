@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Data from './starter-code/data.json'
+import './Crew.css'
 
 export default class Crew extends Component {
     constructor(props) {
@@ -28,16 +29,19 @@ export default class Crew extends Component {
         const crewBio = crewData.bio
         return (
             <div className='Crew'>
-                <h1 className='Crew-heading'>02 MEET YOUR CREW</h1>
-                <h3 className='Crew-role'>{ crewRole }</h3>
-                <h2 className='Crew-name'>{ crewName }</h2>
-                <div className='Crew-bio>'>{ crewBio }</div>
-                <section>
-                    <button onClick={this.handleClick} className='Commander'>C</button>
-                    <button onClick={this.handleClick} className='Mission Specialist'>MS</button>
-                    <button onClick={this.handleClick} className='Flight Engineer'>FE</button>
-                    <button onClick={this.handleClick} className='Pilot'>P</button>
-                </section>
+                <div className='Crew-main'>
+                    <h4 className='Crew-heading'><span>02</span> MEET YOUR CREW</h4>
+                    <h3 className='Crew-role'>{ crewRole }</h3>
+                    <h2 className='Crew-name'>{ crewName }</h2>
+                    <p className='Crew-bio>'>{ crewBio }</p>
+                    <section>
+                        <div onClick={this.handleClick} className='Commander'></div>
+                        <div onClick={this.handleClick} className='Mission Specialist'></div>
+                        <div onClick={this.handleClick} className='Flight Engineer'></div>
+                        <div onClick={this.handleClick} className='Pilot'></div>
+                    </section>
+                </div>
+                    
                 <figure className='Crew-image'>
                     <img src={require(`./starter-code${crewImage}`)} alt={crewName} />
                 </figure>

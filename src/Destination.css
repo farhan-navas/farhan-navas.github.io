@@ -92,5 +92,10 @@ body {
 }
 
 .Destination-content > .Destination-bottom > div > h6 {
+    margin-block: 1rem;
+    color: var(--purplish);
+}
+
+.Destination-content > .Destination-bottom > div > h4 {
     margin-block-start: 1rem;
 }

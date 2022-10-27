@@ -1,0 +1,63 @@
+body {
+    background-color: var(--bluish);
+    background-image: url(./starter-code/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(80vh - 1px);
+}
+
+.Crew {
+    display: flex;
+    justify-content: center;
+}
+
+.Crew-main > h4 {
+    margin-block-start: 80px;
+}
+
+.Crew-main > h4 > span {
+    color: var(--white--transparent);
+    font-weight: 500;
+}
+
+.Crew-main > h3 {
+    font-weight: 200;
+    color: var(--white--transparent);
+    margin-block-start: 240px;
+}
+
+.Crew-main > h2 {
+    margin-block: 0.4em;
+}
+
+.Crew-main > p {
+    width: 444px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--purplish);
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    margin-block-end: 2.5rem;
+}
+
+.Crew-main > section {
+    display: flex;
+}
+
+.Crew-main > section > div {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0rem 1rem;
+    background-color: var(--white--transparent);
+}
+
+.Crew-image {
+    padding-left: 10%;
+    margin-top: 10%;
+}
+
