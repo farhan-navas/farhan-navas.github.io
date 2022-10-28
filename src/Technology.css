@@ -1,3 +1,11 @@
+.tech {
+    background-image: url(./starter-code/assets/technology/background-technology-desktop.jpg);
+    background-color: var(--bluish);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 1px);
+}
+
 .Technology {
     display: flex;
     margin-left: 11%;

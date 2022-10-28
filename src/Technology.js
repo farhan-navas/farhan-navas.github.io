@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavBar from './NavBar'
 import Data from './starter-code/data.json'
 import './Technology.css'
 
@@ -27,29 +28,32 @@ export default class Technology extends Component {
         const techPortrait = images[0].substring(1)
         const techLandscape = images[1].substring(1)  
         return (
-            <div className='Technology'>
-                <div className='Technology-main'>
-                    <div className='Technology-intro'>
-                        <h4 className='Technology-heading'><span>03</span> SPACE LAUNCH 101</h4>
-                    </div>
-                    
-                    <div className='Technology-content'>
-                        <section className='Technology-buttons'>
-                            <h3 onClick={this.handleClick} className={ this.state.tech === 0 ? 'Launch Vehicle active' : 'Launch Vehicle'}>1</h3>
-                            <h3 onClick={this.handleClick} className={ this.state.tech === 1 ? 'Spaceport active' : 'Spaceport'}>2</h3>
-                            <h3 onClick={this.handleClick} className={ this.state.tech === 2 ? 'Space Capsule active' : 'Space Capsule'}>3</h3>
-                        </section>
-                        <div className='Technology-content-desc'>
-                            <h6 className='Technology-subheading'>THE TERMINOLOGY...</h6>
-                            <h2 className='Technology-name'>{ techName }</h2>
-                            <p className='Technology-description'>{ techDescription }</p>
+            <div className='tech'>
+                <NavBar />
+                <div className='Technology'>
+                    <div className='Technology-main'>
+                        <div className='Technology-intro'>
+                            <h4 className='Technology-heading'><span>03</span> SPACE LAUNCH 101</h4>
+                        </div>
+                        
+                        <div className='Technology-content'>
+                            <section className='Technology-buttons'>
+                                <h3 onClick={this.handleClick} className={ this.state.tech === 0 ? 'Launch Vehicle active' : 'Launch Vehicle'}>1</h3>
+                                <h3 onClick={this.handleClick} className={ this.state.tech === 1 ? 'Spaceport active' : 'Spaceport'}>2</h3>
+                                <h3 onClick={this.handleClick} className={ this.state.tech === 2 ? 'Space Capsule active' : 'Space Capsule'}>3</h3>
+                            </section>
+                            <div className='Technology-content-desc'>
+                                <h6 className='Technology-subheading'>THE TERMINOLOGY...</h6>
+                                <h2 className='Technology-name'>{ techName }</h2>
+                                <p className='Technology-description'>{ techDescription }</p>
+                            </div>
                         </div>
                     </div>
+                    
+                    <figure className='Technology-image'>
+                        <img src={require(`./starter-code${techPortrait}`)} alt={techName} />
+                    </figure>
                 </div>
-                
-                <figure className='Technology-image'>
-                    <img src={require(`./starter-code${techPortrait}`)} alt={techName} />
-                </figure>
             </div>
         )
     }
