@@ -25,7 +25,7 @@
 }
 
 .Destination-sidebar > .Destination-image {
-    height: 445px;
+    height: 4px;
     width: 445px;
     display: block;
     margin-top: 80px;
@@ -34,7 +34,7 @@
 .Destination-content {
     margin-left: auto;
     margin-right: auto;
-    width: 445px;
+    width: 455px;
     height: 472px;
     margin-top: 180px;
 }
@@ -99,3 +99,131 @@
 .Destination-content > .Destination-bottom > div > h4 {
     margin-block-start: 1rem;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .dest {
+        background-image: url(./starter-code/assets/destination/background-destination-tablet.jpg);
+    }
+
+    .Destination {
+        flex-wrap: wrap;
+    }
+
+    .Destination-sidebar {
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .Destination-sidebar > .Destination-heading {
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    .Destination-sidebar > .Destination-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .Destination-sidebar > .Destination-image > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Destination-content {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .Destination-content > .Destination-name {
+        font-size: 80px;
+    }
+
+    .Destination-content > .Destination-desc {
+        font-size: 18px;
+        line-height: 28px;
+        margin-block-end: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .dest {
+        background-image: url(./starter-code/assets/destination/background-destination-mobile.jpg);
+    }
+
+    .Destination-sidebar {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Destination-sidebar > .Destination-heading {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Destination-sidebar > .Destination-image {
+        width: 170px;
+        height: 170px;
+        margin-top: 40px;
+        margin-block-start: 15px;
+    }
+    
+    .Destination-sidebar > .Destination-image > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Destination-content {
+        margin-top: 0;
+    }
+
+    .Destination-content > .Destination-buttons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Destination-content > .Destination-buttons > h6 {
+        font-size: 14px;
+        margin-block-start: 0;
+        margin-block-end: 10px;
+        margin-inline: 10px;
+        padding: 0.5rem 0.3rem;
+    }
+
+    .Destination-content > .Destination-name {
+        font-size: 56px;
+        margin-block: 0;
+    }
+
+    .Destination-content > .Destination-desc {
+        font-size: 15px;
+        line-height: 24px;
+        margin-block-start: 0;
+    }
+
+    .Destination-bottom {
+        flex-wrap: wrap;
+    }
+    
+    .Destination-content > hr {
+        border-bottom: 1pt solid;
+        color: var(--darkgrayish);
+    }
+
+    
+    .Destination-content > .Destination-bottom > div > h6 {
+        font-size: 14px;
+        margin-block-start: 5px;
+        margin-block-end: 0;
+    }
+
+    .Destination-content > .Destination-bottom > div > h4 {
+        font-size: 24px;
+        margin-block-start: 10px;
+        margin-block-end: 15px;
+    }
+
+} 
