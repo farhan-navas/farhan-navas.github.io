@@ -8,8 +8,9 @@
 
 .Home {
     display: flex;
-    height: calc(70vh - 1px);
+    flex-wrap: wrap;
     align-items: center;
+    height: calc(70vh - 1px);
 }
 
 .MainPage {
@@ -61,4 +62,90 @@
     margin-block: 0;
     text-align: center;    
     color: var(--bluish);
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        background-image: url(./starter-code/assets/home/background-home-tablet.jpg);
+    }
+    
+    .Home {
+        height: calc(80vh - 1px);
+        text-align: center;
+    }
+
+    .MainPage {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .MainPage-subheading {
+        font-size: 24px;
+    }
+
+    .MainPage-content {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .MainPage-button {
+        margin-top: 5%;
+    }
+
+    .MainPage-button {
+        width: 242px;
+        height: 242px;
+    }
+
+    .MainPage-button:hover {
+        box-shadow: 0px 0px 0px 75px rgba(179,179,179,0.3);
+    }
+
+    .MainPage-button > h3 {
+        line-height: 242px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .home {
+        background-image: url(./starter-code/assets/home/background-home-mobile.jpg);
+    }
+
+    .Home {
+        height: calc(85vh - 1px);
+    }
+
+    .MainPage {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .MainPage-subheading {
+        font-size: 16px;
+    }
+
+    .MainPage-heading {
+        font-size: 100px;
+    }
+
+    .MainPage-content {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .MainPage-button {
+        height: 150px;
+        width: 150px;
+    }
+
+    .MainPage-button:hover {
+        box-shadow: 0px 0px 0px 45px rgba(179,179,179,0.3);
+    }
+
+    .MainPage-button > h3 {
+        line-height: 150px;
+        font-size: 20px;
+    }
 }
