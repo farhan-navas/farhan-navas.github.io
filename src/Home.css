@@ -46,12 +46,14 @@
     width: 274px;
     background-color: var(--white);
     border-radius: 50%;
+    position: relative;
+    transition: box-shadow 500ms ease-in-out;
 }
 
 .MainPage-button:hover {
     cursor: pointer;
-    border: 87px solid var(--navbar--color);
-    
+    box-shadow: 0px 0px 0px 87px rgba(179,179,179,0.3);
+    transition: box-shadow 500ms ease-in-out;  
 }
 
 .MainPage-button > h3 {

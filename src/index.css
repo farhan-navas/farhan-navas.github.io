@@ -18,6 +18,11 @@
     --darkgrayish: #404040;
     --navbar--color: rgba(11, 13, 23, 0.4);
     color: var(--white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
     background-color: var(--bluish);
 }
 
