@@ -81,3 +81,11 @@
     margin-inline-start: 40%;
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 768px) {
+    .tech {
+        background-image: url(./starter-code/assets/technology/background-technology-tablet.jpg);
+    }
+
+    
+}

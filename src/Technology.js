@@ -6,7 +6,7 @@ import './Technology.css'
 export default class Technology extends Component {
     constructor(props) {
         super(props)
-        this.state = { tech: 0 }
+        this.state = { tech: 0, media: 'desktop' }
         this.handleClick = this.handleClick.bind(this)
     }
 
@@ -20,13 +20,22 @@ export default class Technology extends Component {
         } 
     }
 
+    // figure out how to set a function in CompDidMount that will check the media of the webpage and then setState to 'desktop' or
+    // 'mobile' and then cause change of pic being extracted from json
+
     render() {
-        const techData = Data.technology[this.state.tech]
-        const techName = techData.name
-        const techDescription = techData.description
-        const images = Object.values(techData.images)
-        const techPortrait = images[0].substring(1)
-        const techLandscape = images[1].substring(1)  
+        const techData = Data.technology[this.state.tech];
+        const techName = techData.name;
+        const techDescription = techData.description;
+        const images = Object.values(techData.images);
+        const techPortrait = images[0].substring(1);
+        const techLandscape = images[1].substring(1);
+        let techImage;
+        if ( this.state.media === 'desktop') {
+            techImage = techPortrait
+        } else {
+            techImage = techLandscape
+        }
         return (
             <div className='tech'>
                 <NavBar />
@@ -51,7 +60,7 @@ export default class Technology extends Component {
                     </div>
                     
                     <figure className='Technology-image'>
-                        <img src={require(`./starter-code${techPortrait}`)} alt={techName} />
+                        <img src={require(`./starter-code${techImage}`)} alt={techName} />
                     </figure>
                 </div>
             </div>
