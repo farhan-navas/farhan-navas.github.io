@@ -117,9 +117,9 @@
     }
 
     .MainPage {
-        margin-top: 100px;
+        margin-top: 120px;
         max-height: 280px;
-        max-width: 320px;
+        max-width: 328px;
         padding-left: 0;
         margin-left: auto;
         margin-right: auto;
@@ -130,7 +130,7 @@
     }
 
     .MainPage-heading {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .MainPage-content {
@@ -139,6 +139,7 @@
     }
 
     .MainPage-button {
+        margin-top: 80px;
         height: 150px;
         width: 150px;
     }
