@@ -6,7 +6,8 @@ import './Technology.css'
 export default class Technology extends Component {
     constructor(props) {
         super(props)
-        this.state = { tech: 0, media: 'desktop' }
+        this.state = { tech: 0, media: window.matchMedia("(max-width: 768px)").matches }
+        // if media is true => mobile, if media is false => desktop
         this.handleClick = this.handleClick.bind(this)
     }
 
@@ -20,8 +21,16 @@ export default class Technology extends Component {
         } 
     }
 
-    // figure out how to set a function in CompDidMount that will check the media of the webpage and then setState to 'desktop' or
-    // 'mobile' and then cause change of pic being extracted from json
+    componentDidMount() {
+        const handle = (e) => {
+            if (e.matches) {
+                this.setState({ media: true})
+            } else {
+                this.setState({ media: false })
+            }
+        }
+        window.matchMedia("(max-width: 768px)").addEventListener('change', handle)
+    }
 
     render() {
         const techData = Data.technology[this.state.tech];
@@ -31,10 +40,10 @@ export default class Technology extends Component {
         const techPortrait = images[0].substring(1);
         const techLandscape = images[1].substring(1);
         let techImage;
-        if ( this.state.media === 'desktop') {
-            techImage = techPortrait
-        } else {
+        if ( this.state.media) {
             techImage = techLandscape
+        } else {
+            techImage = techPortrait
         }
         return (
             <div className='tech'>
