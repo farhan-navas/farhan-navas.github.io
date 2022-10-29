@@ -117,6 +117,9 @@
     }
 
     .MainPage {
+        margin-top: 100px;
+        max-height: 280px;
+        max-width: 320px;
         padding-left: 0;
         margin-left: auto;
         margin-right: auto;

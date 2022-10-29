@@ -81,20 +81,25 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .hidden {
+    .NavBar > .hidden {
         display: none;
     }
 
     .NavBar {
-        position: absolute;
-        height: 100%;
         z-index: 1;
+        position: absolute;
     }
 
     .NavBar > .Logo {
         position: fixed;
         inset: 20px 0 0 20px;
         padding: 0;
+    }
+
+    .NavBar > .Hamburger {
+        position: fixed;
+        top: 34px;
+        right: 20px;
     }
 
     .NavBar > .links {
