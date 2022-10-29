@@ -1,14 +1,19 @@
 import { NavLink } from "react-router-dom";
 import React, { Component } from 'react'
 import Logo from './starter-code/assets/shared/logo.svg'
+import HamburgerIcon from './starter-code/assets/shared/icon-hamburger.svg'
+import CloseIcon from './starter-code/assets/shared/icon-close.svg'
+import './NavBar.css'
 
 export default class NavBar extends Component {
+    
     render() {
         return (
         <nav className='NavBar'>
-            <img src={Logo} alt={Logo} />
+            <img src={Logo} alt={Logo} className='Logo' />
             <hr></hr>
-            <div className='links'>
+            <img src={HamburgerIcon} alt={HamburgerIcon} className='HamburgerIcon'/>
+            <div className='links' id="links">
                 <h6><NavLink to={'/home'} className={({isActive}) => isActive ? 'active': undefined}><span>00</span> HOME</NavLink></h6>
                 <h6><NavLink to={'/destination'} className={({isActive}) => isActive ? 'active': undefined}><span>01</span> DESTINATION</NavLink></h6>
                 <h6><NavLink to={'/crew'} className={({isActive}) => isActive ? 'active': undefined}><span>02</span> CREW</NavLink></h6>

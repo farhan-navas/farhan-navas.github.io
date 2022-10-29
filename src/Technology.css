@@ -96,9 +96,11 @@
 
     .Technology-main > .Technology-intro > .Technology-heading {
         position: fixed;
-        top: calc(10% + 40px);
+        top: 136px;
         margin-left: 20px;
         font-size: 20px;
+        margin-block-start: 0;
+        margin-block-end: 60px;
     }
 
     .Technology-main > .Technology-intro {
@@ -114,7 +116,8 @@
 
     .Technology-main > .Technology-content > .Technology-buttons {
         display: flex;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -141,14 +144,15 @@
 
     .Technology-main > .Technology-content > .Technology-content-desc > .Technology-description {
         width: 458px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
     }
     
     .Technology-image {
-        margin-block-start: 120px;
+        margin-block-start: 160px;
         width: 100%;
         height: auto;
         margin-inline: 0;

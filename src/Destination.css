@@ -125,6 +125,7 @@
     .Destination-sidebar > .Destination-image {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 40px;
         width: 300px;
         height: 300px;
     }
@@ -139,12 +140,22 @@
         text-align: center;
     }
 
+    .Destination-content > .Destination-buttons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Destination-content > .Destination-buttons > h6 {
+        margin: 1rem 0.5rem;
+    }
+
     .Destination-content > .Destination-name {
         font-size: 80px;
+        margin-block-start: 0.2em;
     }
 
     .Destination-content > .Destination-desc {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         margin-block-end: 1.5em;
     }
