@@ -118,6 +118,8 @@
     .Destination-sidebar > .Destination-heading {
         margin-left: 20px;
         text-align: start;
+        font-size: 20px;
+        margin-block-start: 0;
     }
 
     .Destination-sidebar > .Destination-image {
