@@ -20,13 +20,10 @@
     height: 1px;
 }
 
-.NavBar > .HamburgerIcon {
-    display: none;
-}
-
 .NavBar > .links {
     display: flex;
     background-color: var(--navbar--color);
+    backdrop-filter: blur(2rem);
     padding: 0 5rem;
 }
 
@@ -80,6 +77,48 @@
 
     .NavBar > .links > h6 > a > span {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hidden {
+        display: none;
+    }
+
+    .NavBar {
+        position: absolute;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .NavBar > .Logo {
+        position: fixed;
+        inset: 20px 0 0 20px;
+        padding: 0;
+    }
+
+    .NavBar > .links {
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 100%;
+        z-index: 1000;
+        width: 70%;
+        padding: min(6rem, 20vh) 1rem;
+    }
+
+    .NavBar > .links > h6 > a {
+        font-size: 16px;
+        padding: 1.2rem 0.2rem;
+    }
+
+    .NavBar > .links > h6 > a > span {
+        display: block;
+        font-size: 18px;
+        padding-right: 0.5rem;
+    }
+
+    .NavBar > .links > h6 > .active {
+        border-bottom: 0;
     }
 }
 
