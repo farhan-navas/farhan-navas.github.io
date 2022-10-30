@@ -32,6 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/farhan-navas/space-tourism-website](https://github.com/farhan-navas/space-tourism-website)
+- Live Site URL: [space-tourism-website-farhan-navas.vercel.app/home](space-tourism-website-farhan-navas.vercel.app/home)
 
 ## My process
 
@@ -70,16 +71,14 @@ handleOpen(e) {
 
 One mistake I realised far too late, was that maybe I could have used a single CSS file that contained different classes and then I could have applied it to all. Still not very sure how that will work, but it is just an idea for now. I would also like to learn the usage of React Hooks then I will not have to write such lengthy code. I also aim to incorporate the use of Tailwind CSS in my next project, instead of using just regular css. Also need to figure out how to add a live site url if I am using CRA.
 
-Another problem I have found out when I am hosting is that the webpage is zoomed in, and when i built it optimal viewing is 70% not 100% on my 14-inch screen. Not very sure on how to fix this either.
-
 ### Useful resources
 
 - [React Router](https://www.youtube.com/watch?v=Ul3y1LXxzdU&t=17s&ab_channel=WebDevSimplified) - This helped me to learn about React Routers and he gave a easily understandable explanation.
-- [StackOverflow](https://stackoverflow.com/) - One stop solution for all my problems
+- [StackOverflow](https://stackoverflow.com/) - One stop solution for all my problems, thanks to everyone who helped me with hosting and deployment of my page
 
 ## Author
 
-- Frontend Mentor - [@wakandakings](https://www.frontendmentor.io/profile/wakandakingz)
+- Frontend Mentor - [@wakandakingz](https://www.frontendmentor.io/profile/wakandakingz)
 - Github - [@farhan-navas](https://www.github.com/farhan-navas)
 
 
